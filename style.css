@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #0b2239, #16405f);
+    color: #e8f4fb;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #08182a;
+    text-align: center;
+    padding: 20px 15px;
+    border-bottom: 4px solid #7ec8e3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    background-color: #0f2f4b;
+}
+
+nav button {
+    background-color: #1c577d;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+nav button:hover {
+    background-color: #7ec8e3;
+    color: #08182a;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.diapositiva {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid #7ec8e3;
+    border-radius: 10px;
+    padding: 25px 30px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.diapositiva.activa {
+    display: block;
+}
+
+.diapositiva h2 {
+    margin-top: 0;
+    color: #7ec8e3;
+    border-bottom: 2px solid #7ec8e3;
+    padding-bottom: 8px;
+}
+
+.diapositiva h3 {
+    color: #bfe6f5;
+    margin-bottom: 4px;
+}
+
+.diapositiva p {
+    font-size: 1.05rem;
+    margin: 12px 0;
+}
+
+.diapositiva img {
+    display: block;
+    max-width: 100%;
+    max-height: 280px;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: 2px solid #7ec8e3;
+}
+
+.contenedor > button {
+    background-color: #7ec8e3;
+    color: #08182a;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contenedor > button:hover {
+    background-color: #ffffff;
+}
+
+#contador {
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: bold;
+    color: #bfe6f5;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.1rem;
+    }
+
+    .diapositiva {
+        padding: 18px;
+    }
+}
